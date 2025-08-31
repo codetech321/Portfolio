@@ -180,9 +180,6 @@ header {
   border-radius: 50%;
   border: 3px solid transparent;
   border-top: 3px solid #00bcd4; /* Blue color */
-  /*/ border-right: 3px solid #FF5722; /* Orange color */
-  /*border-bottom: 3px solid #28A745; /* Green color */
-  /* border-left: 3px solid #FFC107;   /* Yellow color */
   animation: rotate 4s linear infinite;
   z-index: 1;
 }
@@ -520,17 +517,13 @@ footer {
     height: 100%;
     object-fit: cover;
   }
-   .profile img {
-    width: 140px;   
-    height: 140px;
-  }
-
-  .profile::after {
-    width: 160px;   
-    height: 160px;
-    top: -8px;
-    left: -8px;
-    border-width: 2px;
+    
+  .circle-border {
+    width: 180px;   
+    height: 180px;
+    top: -6px;      
+    left: -6px;
+    border-width: 2px; 
   }
   .about-text {
     font-size: 14px;
