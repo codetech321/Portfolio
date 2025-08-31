@@ -424,16 +424,16 @@ footer {
     position: fixed;
     top: 60px;
     right: -100%;
-    width: 100px;
-    height: 25vh;
+    width: 110px;
+    height: 100vh;
     background: #111;
-    border-radius: 10px;
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
     padding-top: 60px;
     gap: 25px;
     transition: right 0.3s ease-in-out;
+    background: transparent;
   }  
   
   .nav-links.active {
