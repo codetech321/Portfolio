@@ -435,7 +435,9 @@ footer {
     transition: right 0.3s ease-in-out;
     background: transparent;
   }  
-  
+  .nav-list li a {
+    color:black; 
+  }
   .nav-links.active {
     right: 0;
   }
