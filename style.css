@@ -424,7 +424,7 @@ footer {
     position: fixed;
     top: 60px;
     right: -100%;
-    width: 180px;
+    width: 170px;
     height: 100vh;
     background: #111;
     flex-direction: column;
