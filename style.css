@@ -524,7 +524,8 @@ footer {
   .about-text {
     font-size: 14px;
     line-height: 1.5;
-    padding: 0 10px;   
+    padding: 0 10px;
+    text-align: justify;   
   }
 
   .about-text h3 {
