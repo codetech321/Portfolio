@@ -654,10 +654,11 @@ footer {
     width: 140px;
     padding-top: 40px;
     gap: 20px;
+    background: transparent;
   }
   .nav-links li a {
     font-size: 1rem;
-    color: white;
+    color: black;
   }
 
   .hero {
@@ -684,6 +685,7 @@ footer {
   .about-text {
     font-size: 13px;
     line-height: 1.4;
+    text-align: justify;
   }
 
   .skill {
@@ -717,9 +719,12 @@ footer {
   .nav-links {
     width: 120px;
     gap: 18px;
+    background: transparent;
   }
   .nav-links li a {
     font-size: 0.9rem;
+    color: black;
+
   }
 
   .hero h1 {
