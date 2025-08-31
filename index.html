@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio | Chandrakesh Dhawal</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="main.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+
+    <!-- ====== HEADER ====== -->
+
+    <header>
+      <nav class="navbar">
+        <div class="logo">Portfolio</div>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li> 
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="menu-toggle" id="menuToggle">&#9776;</div>
+      </nav>
+    </header>
+
+    <!-- ====== HERO ====== -->
+
+    <section id="home" class="hero">
+      <div class="hero-content">
+        <h1>Hello, I'm <span>Chandrakesh Dhawal</span></h1>
+        <h2 class="hero-title">
+       I am a <span id="typewriter"></span><span class="cursor">|</span>
+       </h2>
+        <a href="#projects" class="btn">View My Work</a>
+      </div>
+    </section>
+
+    <!-- ====== ABOUT ====== -->
+
+<section id="about">
+  <h2>About Me</h2>
+  <div class="about-container">
+    <!-- Profile Image -->
+    <div class="about-img">
+      <div class="circle-border"></div>
+      <img src="./Photo/about.png" alt="My Photo">
+    </div>
+
+    <!-- About Text -->
+    <div class="about-text">
+      <p style="margin-bottom: 10px;">
+        I am a Web Developer with expertise in front-end technologies
+        like HTML, CSS, and JavaScript, and back-end development using Node.js,
+        Express, and MongoDB. I have experience in building responsive websites,
+        REST APIs, and database-driven applications. I am eager to contribute my
+        skills to innovative projects, learn from experienced teams, and grow as
+        a software developer.
+      </p>
+
+      <h3>Education</h3>
+      <p>B.Tech in Computer Science – Rama University (2022 - 2025)</p>
+      <p>Diploma in Computer Science – Invertis University (2019 - 2022)</p>
+
+      <h3>Experience & Internships</h3>
+      <p>Full Stack Web Development Intern at LearnNex (Nov 2024 - Feb 2025)</p>
+
+      <!-- Resume Download -->
+      <a href="./resume/MyResume.pdf" download class="resume-btn">Download Resume</a>
+    </div>
+  </div>
+</section>
+
+    <!-- ====== SKILLS ====== -->
+
+  <section id="skills" class="skills">
+  <h2>My Skills</h2>
+  <div class="skills-container">
+    <div class="skill">HTML</div>
+    <div class="skill">CSS</div>
+    <div class="skill">JavaScript</div>
+    <div class="skill">React</div>
+    <div class="skill">Node.js</div>
+    <div class="skill">MongoDB</div>
+    <div class="skill">Git</div>
+    <div class="skill">GitHub</div>
+  </div>
+</section>
+
+    <!-- ====== PROJECTS ====== -->
+
+    <section id="projects" class="projects">
+  <h2>My Projects</h2>
+  <div class="projects-container">
+
+    <div class="project-card">
+      <h3>Portfolio Website</h3>
+      <p>A personal portfolio website built with HTML, CSS, and JavaScript.</p>
+      <a href="https://your-portfolio-link.com" target="_blank" class="project-btn">View Project</a>
+    </div>
+
+    <div class="project-card">
+      <h3>E-commerce Store</h3>
+      <p>Responsive online store with product pages and cart system.</p>
+      <a href="https://your-ecommerce-link.com" target="_blank" class="project-btn">View Project</a>
+    </div>
+
+    <div class="project-card">
+      <h3>Blog Platform</h3>
+      <p>A simple blog system with MongoDB, Node.js, and Express.</p>
+      <a href="https://your-blog-link.com" target="_blank" class="project-btn">View Project</a>
+    </div>
+
+  </div>
+</section>
+
+    <!-- ====== CONTACT ====== -->
+
+  <section id="contact" class="contact">
+  <h2>Contact Me</h2>
+  <form id="contact-form">
+    <input type="text" name="name" placeholder="Your Name" required>
+    <input type="email" name="email" placeholder="Your Email" required>
+    <textarea name="message" placeholder="Your Message" required></textarea>
+    <button type="submit">Send Message</button>
+  </form>
+  <p id="status" class="status-msg"></p>
+  </section>
+      
+      <!-- Social Media Icons -->
+      <div class="social-icons">
+        <a href="#"
+          ><i class="fab fa-facebook-f"></i
+        ></a>
+        <a href="#"
+          ><i class="fab fa-twitter"></i
+        ></a>
+        <a href="https://linkedin.com/in/chandrakesh-dhawal" target="_blank"
+          ><i class="fab fa-linkedin-in"></i
+        ></a>
+        <a href="https://github.com/codetech321" target="_blank"
+          ><i class="fab fa-github"></i
+        ></a>
+        <a href="https://www.instagram.com/_chandu369?igsh=c2NmenRyNTFycjNn" target="_blank"
+          ><i class="fab fa-instagram"></i
+        ></a>
+      </div>
+      <!-- Gmail Contact -->
+      <div class="contact">
+        <a href="mailto:dhawal.dkd@gmail.com">
+          <i class="fas fa-envelope"></i> dhawal.dkd@gmail.com
+        </a>
+        <p>
+      <i style="color: #0097a7;" class="fas fa-phone"></i> 
+      <a href="tel:+911234567890">+91-8604518825</a>
+    </p>
+      </div>
+    
+    </section>
+
+    <footer>
+      <p>© 2025 Chandrakesh Dhawal. All rights reserved.</p>
+    </footer>
+
+   <script>
+  const scriptURL = "https://script.google.com/macros/s/AKfycbydfM2foDLA-0D33baAp1l5fh0uoHlKzYC7hW99DeoQpg1ndU3WilyhJd-urLLhR36A/exec";
+  const form = document.getElementById("contact-form");
+  const statusMsg = document.getElementById("status");
+
+  form.addEventListener("submit", e => {
+    e.preventDefault();
+    const data = {
+      name: form.name.value,
+      email: form.email.value,
+      message: form.message.value
+    };
+
+    fetch(scriptURL, {
+      method: "POST",
+      body: JSON.stringify(data)
+    })
+    .then(res => res.json())
+    .then(() => {
+      statusMsg.innerText = "✅ Message sent successfully!";
+      statusMsg.className = "status-msg status-success";
+      statusMsg.style.display = "block";
+      form.reset();
+
+      // Hide after 5s
+      setTimeout(() => { statusMsg.style.display = "none"; }, 5000);
+    })
+    .catch(err => {
+      statusMsg.innerText = "❌ Error sending message!";
+      statusMsg.className = "status-msg status-error";
+      statusMsg.style.display = "block";
+
+      setTimeout(() => { statusMsg.style.display = "none"; }, 5000);
+    });
+  });
+</script>
+
+  </body>
+</html>
