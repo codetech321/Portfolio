@@ -436,7 +436,7 @@ footer {
     background: transparent;
   }  
   .nav-links li a {
-    color:black; 
+    color:black;
   }
   .nav-links.active {
     right: 0;
@@ -494,14 +494,14 @@ footer {
   }
 
   /* Animation */
-  @keyframes rotate {
+ /* @keyframes rotate {
     0% {
       transform: rotate(0deg);
     }
     100% {
       transform: rotate(360deg);
     }
-  }
+  }*/
 
   .about-text {
     font-size: 14px;
