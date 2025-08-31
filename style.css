@@ -533,13 +533,13 @@ footer {
   position: absolute;
   top: -6px;
   left: -6px;
-  width: 180;
-  height: 180px;
+  width: 200px;
+  height: 200px;
   border-radius: 50%;
-  border: 2px solid transparent;
+  border: 3px solid transparent;
   border-top: 2px solid #00bcd4; /* Blue color */
   animation: rotate 4s linear infinite;
-  z-index: 1;
+  /*z-index: 1;*/
 }
 
 /* Animation */
