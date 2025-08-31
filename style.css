@@ -81,7 +81,7 @@ header {
 
 /* ====== HERO ====== */
 .hero {
-  height: 100vh;
+  height: 80vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -490,7 +490,7 @@ footer {
     flex-direction: column;
     padding: 20px;
     text-align: center;
-    height: 10vh;
+    height: 50vh;
   }
   .hero h1 {
     font-size: 1.8rem;
