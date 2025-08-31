@@ -531,13 +531,13 @@ footer {
   }*/
   .circle-border {
   position: absolute;
-  top: -5px;
-  left: -5px;
-  width: 180px;
+  top: -6px;
+  left: -6px;
+  width: 180;
   height: 180px;
   border-radius: 50%;
-  border: 3px solid transparent;
-  border-top: 3px solid #00bcd4; /* Blue color */
+  border: 2px solid transparent;
+  border-top: 2px solid #00bcd4; /* Blue color */
   animation: rotate 4s linear infinite;
   z-index: 1;
 }
