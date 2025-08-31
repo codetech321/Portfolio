@@ -519,13 +519,39 @@ footer {
     object-fit: cover;
   }
     
-  .circle-border {
-    width: 180px;   
-    height: 180px;
-    top: -6px;      
-    left: -6px;
+  /*.circle-border {
+    width: 200px;   
+    height: 200px;
+    top: -5px;      
+    left: -5px;
     border-width: 2px; 
   }
+  @keyframes spin {
+    
+  }*/
+  .circle-border {
+  position: absolute;
+  top: -6px;
+  left: -6px;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: 3px solid transparent;
+  border-top: 3px solid #00bcd4; /* Blue color */
+  animation: rotate 4s linear infinite;
+  z-index: 1;
+}
+
+/* Animation */
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
   .about-text {
     font-size: 14px;
     line-height: 1.5;
