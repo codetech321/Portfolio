@@ -523,6 +523,8 @@ footer {
     height: 180px;
     top: -6px;      
     left: -6px;
+    right: -6px;
+    bottom: -6px;
     border-width: 2px; 
   }
   .about-text {
@@ -563,10 +565,10 @@ footer {
   }
   .social-icons {
     gap: 10px;
-  }
 }
 
-/* Extra small (very small mobiles <480px) */
+/* Extra small (very small mobiles <480p
+  }x) */
 @media (max-width: 480px) {
   h2 {
     font-size: 1.4rem;
