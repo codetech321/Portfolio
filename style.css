@@ -461,12 +461,51 @@ footer {
 }
 
 /* Small screens (Mobiles) */
-
 @media (max-width: 768px) {
+  .navbar {
+    padding: 15px 20px;
+  }
+
+  .nav-links {
+    position: fixed;
+    top: 60px;
+    right: -100%;
+    width: 200px;
+    height: 100vh;
+    background: #111;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding-top: 60px;
+    gap: 25px;
+    transition: right 0.3s ease-in-out;
+  }
+  .nav-links.active {
+    right: 0;
+  }
+  .menu-toggle {
+    display: block;
+    z-index: 1001;
+  }
+
+  /* Hero Section */
+  .hero {
+    flex-direction: column;
+    padding: 20px;
+    text-align: center;
+  }
+  .hero h1 {
+    font-size: 1.8rem;
+  }
+  .hero h2 {
+    font-size: 1.2rem;
+  }
+
+  /* About Section */
   .about-container {
     flex-direction: column;   
     align-items: center;      
-    text-align: center;       
+    text-align: center;      
     gap: 25px;                
   }
 
@@ -485,7 +524,7 @@ footer {
   .about-text {
     font-size: 14px;
     line-height: 1.5;
-    padding: 0 10px;  
+    padding: 0 10px;   
   }
 
   .about-text h3 {
@@ -498,25 +537,7 @@ footer {
     display: inline-block;
   }
 
-  .menu-toggle {
-    display: block;
-    z-index: 1001;
-  }
 
-
-  /* Hero Section */
-  .hero {
-    flex-direction: column;
-    padding: 20px;
-    text-align: center;
-  }
-  .hero h1 {
-    font-size: 1.8rem;
-  }
-  .hero h2 {
-    font-size: 1.2rem;
-  }
-  
   /* Skills */
   .skills-container {
     gap: 12px;
@@ -571,6 +592,10 @@ footer {
   }
   .project-card p {
     font-size: 0.85rem;
+  }
+  .menu-toggle {
+    display: block;
+    z-index: 1001;
   }
 }
 
