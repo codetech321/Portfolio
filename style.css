@@ -531,10 +531,10 @@ footer {
   }*/
   .circle-border {
   position: absolute;
-  top: -6px;
-  left: -6px;
-  width: 200px;
-  height: 200px;
+  top: -5px;
+  left: -5px;
+  width: 180px;
+  height: 180px;
   border-radius: 50%;
   border: 3px solid transparent;
   border-top: 3px solid #00bcd4; /* Blue color */
