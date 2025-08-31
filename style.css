@@ -434,6 +434,14 @@ footer {
     gap: 25px;
     transition: right 0.3s ease-in-out;
   }  
+  .nav-list {
+    background: rgba(0,0,0,0.7); /* transparent black */
+    position: fixed;
+    right: 0;
+    top: 60px;
+    width: 200px;   /* sirf ek side bar jaise */
+    height: 100vh;
+  }
   .nav-links.active {
     right: 0;
   }
