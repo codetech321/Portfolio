@@ -434,11 +434,8 @@ footer {
     gap: 25px;
     transition: right 0.3s ease-in-out;
     background: transparent;  /* background transparent */
-    box-shadow: none;         /* agar shadow ho to remove */
   }
-  .nav-list li a {
-    color: #fff;   /* text ko white kar do taaki visible rahe */
-  }
+  
   .nav-links.active {
     right: 0;
   }
