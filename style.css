@@ -481,28 +481,11 @@ footer {
   }
 
   .circle-border {
-    /*position: absolute;*/
     top: -5px;
     left: -5px;
     width: 190px;
     height: 190px;
-    /*border-radius: 50%;
-    border: 3px solid transparent;
-    border-top: 2px solid #00bcd4; /* Blue color */
-   /* animation: rotate 4s linear infinite;*/
-   /* z-index: 1;*/
   }
-
-  /* Animation */
- /* @keyframes rotate {
-    0% {
-      transform: rotate(0deg);
-    }
-    100% {
-      transform: rotate(360deg);
-    }
-  }*/
-
   .about-text {
     font-size: 14px;
     line-height: 1.5;
@@ -540,5 +523,252 @@ footer {
   }
   .social-icons {
     gap: 10px;
+  }
+}
+
+/* ====== RESPONSIVE DESIGN ====== */
+
+/* Small screens (Mobiles ≤768px) */
+@media (max-width: 768px) {
+  .navbar {
+    padding: 15px 20px;
+  }
+
+  .nav-links {
+    position: fixed;
+    top: 60px;
+    right: -100%;
+    width: 110px;
+    height: 100vh;
+    background: #111;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding-top: 60px;
+    gap: 25px;
+    transition: right 0.3s ease-in-out;
+    background: transparent;
+  }  
+  .nav-links li a {
+    color: black;
+  }
+  .nav-links.active {
+    right: 0;
+  }
+  .menu-toggle {
+    display: block;
+    z-index: 1001;
+  }
+
+  /* Hero Section */
+  .hero {
+    flex-direction: column;
+    padding: 20px;
+    text-align: center;
+    height: 50vh;
+  }
+  .hero h1 {
+    font-size: 1.8rem;
+  }
+  .hero h2 {
+    font-size: 1.2rem;
+  }
+
+  /* About Section */
+  .about-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 25px;
+  }
+  .about-img {
+    width: 180px;
+    height: 180px;
+    margin: auto;
+  }
+  .about-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .circle-border {
+    position: absolute;
+    top: -6px;
+    left: -6px;
+    width: 190px;
+    height: 190px;
+    border-radius: 50%;
+    border: 3px solid transparent;
+    border-top: 2px solid #00bcd4;
+    animation: rotate 4s linear infinite;
+    z-index: 1;
+  }
+
+  .about-text {
+    font-size: 14px;
+    line-height: 1.5;
+    padding: 0 10px;
+    text-align: justify;
+  }
+  .about-text h3 {
+    margin-top: 15px;
+    font-size: 1rem;
+  }
+  .resume-btn { 
+    margin-top: 20px;
+    display: inline-block;
+  }
+
+  /* Skills */
+  .skills-container {
+    gap: 12px;
+  }
+  .skill {
+    padding: 8px 15px;
+    font-size: 0.9rem;
+  }
+
+  /* Projects */
+  .projects-container {
+    grid-template-columns: 1fr;
+  }
+
+  /* Contact */
+  .contact form {
+    width: 90%;
+  }
+  .social-icons {
+    gap: 10px;
+  }
+}
+
+/* Medium Mobiles (≤600px) */
+@media (max-width: 600px) {
+  .navbar {
+    padding: 12px 15px;
+  }
+  .navbar .logo {
+    font-size: 1.2rem;
+  }
+  .nav-links {
+    width: 140px;
+    padding-top: 40px;
+    gap: 20px;
+  }
+  .nav-links li a {
+    font-size: 1rem;
+    color: white;
+  }
+
+  .hero {
+    height: auto;
+    padding: 40px 15px;
+  }
+  .hero h1 {
+    font-size: 1.6rem;
+  }
+  .hero h2 {
+    font-size: 1rem;
+  }
+
+  .about-img {
+    width: 160px;
+    height: 160px;
+  }
+  .circle-border {
+    width: 170px;
+    height: 170px;
+    top: -5px;
+    left: -5px;
+  }
+  .about-text {
+    font-size: 13px;
+    line-height: 1.4;
+  }
+
+  .skill {
+    font-size: 0.85rem;
+    padding: 7px 12px;
+  }
+
+  .project-card {
+    padding: 15px;
+  }
+  .project-card h3 {
+    font-size: 1.1rem;
+  }
+  .project-card p {
+    font-size: 0.85rem;
+  }
+
+  .contact form {
+    width: 95%;
+  }
+}
+
+/* Small Mobiles (≤480px) */
+@media (max-width: 480px) {
+  .navbar .logo {
+    font-size: 1rem;
+  }
+  .menu-toggle {
+    font-size: 1.5rem;
+  }
+  .nav-links {
+    width: 120px;
+    gap: 18px;
+  }
+  .nav-links li a {
+    font-size: 0.9rem;
+  }
+
+  .hero h1 {
+    font-size: 1.4rem;
+  }
+  .hero h2 {
+    font-size: 0.9rem;
+  }
+
+  .about-img {
+    width: 140px;
+    height: 140px;
+  }
+  .circle-border {
+    width: 150px;
+    height: 150px;
+    top: -5px;
+    left: -5px;
+  }
+  .about-text {
+    font-size: 12px;
+    padding: 0 8px;
+    text-align: justify;
+  }
+
+  .skill {
+    font-size: 0.75rem;
+    padding: 6px 10px;
+  }
+
+  .project-card h3 {
+    font-size: 1rem;
+  }
+  .project-card p {
+    font-size: 0.8rem;
+  }
+
+  .contact input,
+  .contact textarea {
+    font-size: 0.9rem;
+    padding: 8px;
+  }
+  .contact button {
+    font-size: 0.9rem;
+    padding: 8px 10px;
+  }
+
+  footer {
+    font-size: 0.8rem;
+    padding: 15px;
   }
 }
