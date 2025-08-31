@@ -490,7 +490,7 @@ footer {
     flex-direction: column;
     padding: 20px;
     text-align: center;
-    height: 70vh;
+    height: 10vh;
   }
   .hero h1 {
     font-size: 1.8rem;
@@ -524,8 +524,6 @@ footer {
     height: 180px;
     top: -6px;      
     left: -6px;
-    right: -6px;
-    bottom: -6px;
     border-width: 2px; 
   }
   .about-text {
