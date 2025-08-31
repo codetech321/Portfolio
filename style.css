@@ -433,9 +433,7 @@ footer {
     padding-top: 60px;
     gap: 25px;
     transition: right 0.3s ease-in-out;
-    background: transparent;  /* background transparent */
-  }
-  
+  }  
   .nav-links.active {
     right: 0;
   }
