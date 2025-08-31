@@ -424,7 +424,7 @@ footer {
     position: fixed;
     top: 60px;
     right: -100%;
-    width: 170px;
+    width: 160px;
     height: 100vh;
     background: #111;
     flex-direction: column;
@@ -433,6 +433,11 @@ footer {
     padding-top: 60px;
     gap: 25px;
     transition: right 0.3s ease-in-out;
+    background: transparent;  /* background transparent */
+    box-shadow: none;         /* agar shadow ho to remove */
+  }
+  .nav-list li a {
+    color: #fff;   /* text ko white kar do taaki visible rahe */
   }
   .nav-links.active {
     right: 0;
