@@ -454,7 +454,7 @@ footer {
 
   .nav-links li {
     background: black;
-    margin: 10px 10px;      /* yaha gap kam kar do (pehle 5px tha) */
+    margin: 10px 50px;      /* yaha gap kam kar do (pehle 5px tha) */
     border-radius: 20px;
     font-size: 15px;
   }
