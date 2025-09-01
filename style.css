@@ -464,7 +464,9 @@ footer {
     text-decoration: none;
     padding: 8px 15px;
   }
-
+     .nav-links li a::after {
+    display: none !important;  /* mobile par underline/transition hide ho jayega */
+  }
   .nav-links.active {
     right: 0;
   }
@@ -580,7 +582,9 @@ footer {
     border-radius: 15px;  /* halka curve */
   }
 
-
+.nav-links li a::after {
+    display: none !important;
+  }
   .menu-toggle {
     display: block;
   }
@@ -660,6 +664,10 @@ footer {
     background: black;
     margin: 1px 0;       /* aur kam gap */
     border-radius: 10px;  /* halka curve */
+  }
+
+  .nav-links li a::after {
+    display: none !important;
   }
   .hero h1 {
     font-size: 1.4rem;
