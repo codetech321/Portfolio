@@ -397,78 +397,9 @@ footer {
 }
 
 /* ====== RESPONSIVE ====== */
-@media (max-width: 768px) {
-  .navbar {
-    padding: 15px 20px;
-  }
-  .nav-links {
-    position: fixed;
-    top: 50px;
-    right: -100%;
-    width: 110px;
-    height: 100vh;
-    background: transparent;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-    padding-top: 60px;
-    gap: 6px;
-    transition: right 0.3s ease-in-out;
-  }
-  .nav-links li {
-    background: black;
-    margin: 10px 0;
-    border-radius: 20px;
-  }
-  .nav-links li a {
-    padding: 8px 15px;
-  }
-  .nav-links li a::after {
-    display: none !important;
-  }
-  .nav-links.active {
-    right: 0;
-  }
-  .hero {
-    height: 50vh;
-  }
-  .about-container {
-    flex-direction: column;
-    gap: 25px;
-  }
-  .about-img {
-    width: 180px;
-    height: 180px;
-  }
-  .circle-border {
-    width: 190px;
-    height: 190px;
-    top: -5px;
-    left: -5px;
-  }
-  .about-text {
-    font-size: 14px;
-    padding: 0 10px;
-  }
-  .skills-container {
-    gap: 12px;
-  }
-  .skill {
-    padding: 8px 15px;
-    font-size: 0.9rem;
-  }
-  .projects-container {
-    grid-template-columns: 1fr;
-  }
-  .contact form {
-    width: 90%;
-  }
-  .social-icons {
-    gap: 10px;
-  }
-}
 
 /* Medium Mobiles (≤600px) */
+
 @media (max-width: 600px) {
   .navbar {
     padding: 12px 15px;
@@ -477,19 +408,57 @@ footer {
     font-size: 1.2rem;
   }
   .nav-links {
-    top: 60px;
-    width: 100px;
-    padding-top: 45px;
-    gap: 4px;
+    width: 180px;
+    padding-top: 50px;
+    gap: 8px;
   }
   .nav-links li {
-    margin: 12px 0;
-    border-radius: 15px;
+    width: 75%;
+    margin: 8px 0;
+    border-radius: 12px;
     font-size: 12px;
   }
   .nav-links li a {
-    padding: 6px 12px;
+    padding: 8px 12px;
+    font-size: 0.9rem;
   }
+
+  @media (max-width: 768px) {
+    .nav-links {
+      position: fixed;
+      top: 0; /* navbar ke niche adjust kar sakte ho */
+      right: -100%;
+      width: 200px; /* menu ka width */
+      height: 100vh;
+      background: #111; /* visible background */
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      padding-top: 60px;
+      gap: 10px;
+      transition: right 0.3s ease-in-out;
+      z-index: 1000;
+    }
+
+    .nav-links li {
+      background: black;
+      margin: 10px 0;
+      border-radius: 15px;
+      width: 80%; /* mobile me full width thoda kam rakha */
+      text-align: center;
+    }
+
+    .nav-links.active {
+      right: 0; /* menu visible */
+    }
+
+    .menu-toggle {
+      display: block;
+      font-size: 1.5rem;
+      z-index: 1001;
+    }
+  }
+
   .hero {
     height: auto;
     padding: 40px 15px;
