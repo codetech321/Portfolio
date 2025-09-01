@@ -458,6 +458,10 @@ footer {
     text-decoration: none;
     padding: 8px 15px;
   }
+  .nav-links a:hover {
+    color: inherit;   
+    background: transparent;
+  }
   .nav-links li a::after {
     display: none !important; /* mobile par underline/transition hide ho jayega */
   }
