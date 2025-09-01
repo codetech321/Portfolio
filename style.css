@@ -651,7 +651,7 @@ footer {
   }
   .nav-links {
     position: fixed;
-    top: 25px;
+    top: 35px;
     right: -100%;
     width: 90px;
     height: 100vh;
