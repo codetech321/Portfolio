@@ -47,10 +47,9 @@ header {
 .nav-links a {
   color: #fff;
   text-decoration: none;
-}
-.nav-links a {
   position: relative;
   transition: color 0.3s ease;
+  outline: none;
 }
 
 .nav-links a:hover {
