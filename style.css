@@ -74,9 +74,15 @@ header {
 }
 
 .menu-toggle {
-  display: none;
+  display: none; /* desktop pe hide */
   font-size: 2rem;
   cursor: pointer;
+  z-index: 1002;
+  color: black; /* change according to background */
+}
+
+.menu-toggle i {
+  transition: all 0.3s ease;
 }
 
 /* ====== HERO ====== */
@@ -620,7 +626,7 @@ footer {
   }
 
   /* Skills */
-   .skills-container {
+  .skills-container {
     gap: 12px;
   }
   .skill {
