@@ -1,3 +1,18 @@
+/* ====== Global Fix ====== */
+/* Tap highlight (mobile browsers) remove */
+a, button {
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* Active/Focus par koi background na aaye */
+a:active, a:focus,
+button:active, button:focus {
+  background: transparent !important;
+  outline: none;
+}
+
+
+
 /* ====== GLOBAL ====== */
 * {
   margin: 0;
@@ -49,7 +64,6 @@ header {
   text-decoration: none;
   position: relative;
   transition: color 0.3s ease;
-  outline: none;
 }
 
 .nav-links a:hover {
