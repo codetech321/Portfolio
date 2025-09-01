@@ -451,9 +451,20 @@ footer {
     transition: right 0.3s ease-in-out;
     background: transparent;
   }
-  .nav-links li a {
-    color: black;
+  
+  .nav-links li {
+    background: black;
+    margin: 5px 0;
+    border-radius: 5px;
   }
+
+  .nav-links li a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+  }
+
   .nav-links.active {
     right: 0;
   }
@@ -551,15 +562,19 @@ footer {
     font-size: 1.2rem;
   }
   .nav-links {
-    width: 140px;
+    width: 100px;
     padding-top: 40px;
     gap: 20px;
     background: transparent;
   }
   .nav-links li a {
     font-size: 1rem;
-    color: black;
+    color: white;
   }
+  .nav-links li {
+    background: black;
+  }
+
   .menu-toggle {
     display: block;
   }
@@ -623,15 +638,17 @@ footer {
     font-size: 1.5rem;
   }
   .nav-links {
-    width: 120px;
+    width: 90px;
     gap: 18px;
     background: transparent;
   }
   .nav-links li a {
     font-size: 0.9rem;
-    color: black;
+    color: white;
   }
-
+  .nav-links li {
+    background: black;
+  }
   .hero h1 {
     font-size: 1.4rem;
   }
