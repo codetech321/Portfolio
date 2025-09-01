@@ -54,7 +54,7 @@ header {
 }
 
 .nav-links a:hover {
-  color: #0097a7; /* Text color change */
+  color: #0097a7; 
 }
 
 /* Underline animation effect */
@@ -76,23 +76,22 @@ header {
 .menu-toggle {
   cursor: pointer;
   font-size: 24px;
-  display: none; /* desktop par hide */
+  display: none; 
 }
 
 .menu-toggle i {
-  display: none; /* dono icons by default hidden */
+  display: none; 
 }
 
 .menu-toggle .open-icon {
-  display: inline-block; /* sirf bars pehle dikhe */
-}
+  display: inline-block; 
 
 .menu-toggle.active .open-icon {
-  display: none; /* active hone par bars hide */
+  display: none; /
 }
 
 .menu-toggle.active .close-icon {
-  display: inline-block; /* active hone par cross dikhe */
+  display: inline-block; 
 }
 
 /* ====== HERO ====== */
@@ -157,18 +156,8 @@ header {
   flex-wrap: wrap;
 }
 
-.about-img img {
-  width: 250px; /* size bada rakho */
-  height: 250px;
-  object-fit: cover; /* zoom crop for better look */
-  border-radius: 50%; /* circular photo */
-  border: 5px solid #fff; /* white border */
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25); /* soft shadow */
-  transition: transform 0.4s ease;
-}
-
 .about-img img:hover {
-  transform: scale(1.05); /* thoda zoom hover par */
+  transform: scale(1.05); 
 }
 .about-img {
   position: relative;
@@ -182,7 +171,9 @@ header {
   object-fit: cover;
   border-radius: 50%;
   position: relative;
+  border: 5px solid #fff;
   z-index: 2;
+  transition: transform 0.4s ease;
   box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
 }
 
@@ -195,7 +186,7 @@ header {
   height: 270px;
   border-radius: 50%;
   border: 3px solid transparent;
-  border-top: 3px solid #00bcd4; /* Blue color */
+  border-top: 3px solid #00bcd4; 
   animation: rotate 4s linear infinite;
   z-index: 1;
 }
@@ -253,9 +244,9 @@ header {
 .skill {
   background: black;
   color: white;
-  padding: 10px 20px; /* Pehle 15px 30px tha, ab kam kiya */
+  padding: 10px 20px; 
   border-radius: 6px;
-  font-size: 1rem; /* Thoda chhota font */
+  font-size: 1rem; 
   font-weight: 600;
   transition: all 0.3s ease;
   cursor: pointer;
@@ -354,7 +345,7 @@ header {
   border-radius: 6px;
   font-size: 14px;
   font-weight: 500;
-  display: none; /* hidden by default */
+  display: none; 
   text-align: center;
 }
 .status-success {
@@ -454,7 +445,7 @@ footer {
 
   .nav-links li {
     background: black;
-    margin: 10px 50px;      /* yaha gap kam kar do (pehle 5px tha) */
+    margin: 10px 10px;
     border-radius: 20px;
     font-size: 15px;
   }
@@ -465,8 +456,8 @@ footer {
     text-decoration: none;
     padding: 8px 15px;
   }
-     .nav-links li a::after {
-    display: none !important;  /* mobile par underline/transition hide ho jayega */
+  .nav-links li a::after {
+    display: none !important; /* mobile par underline/transition hide ho jayega */
   }
   .nav-links.active {
     right: 0;
@@ -474,7 +465,7 @@ footer {
   .menu-toggle {
     display: block;
     z-index: 1001;
-    font-size: 1.5rem ;
+    font-size: 1.5rem;
   }
 
   /* Hero Section */
@@ -566,26 +557,33 @@ footer {
     font-size: 1.2rem;
   }
   .nav-links {
-    margin-top: 15px;
+    position: fixed;
+    top: 15px;
+    right: -100%;
     width: 100px;
+    height: 100vh;
+    background: #111;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
     padding-top: 40px;
     gap: 4px;
+    transition: right 0.3s ease-in-out;
     background: transparent;
   }
   .nav-links li a {
     display: block;
     color: white;
     text-decoration: none;
-    padding: 8px 12px;   /* padding chhoti rakhi mobile fit ke liye */
-    font-size: 12px;     /* thoda chhota text */
-  }
+    padding: 6px 12px;
+  } 
   .nav-links li {
     background: black;
-    margin: 2px 0;       /* beech ka gap kam */
-    border-radius: 15px;  /* halka curve */
+    margin: 8px 8px;
+    border-radius: 15px;
+    font-size: 12px; 
   }
-
-.nav-links li a::after {
+  .nav-links li a::after {
     display: none !important;
   }
   .menu-toggle {
@@ -652,25 +650,35 @@ footer {
     font-size: 1.5rem;
   }
   .nav-links {
-    margin-top: 15px;
+    position: fixed;
+    top: 15px;
+    right: -100%;
     width: 90px;
-    gap: 2px;
+    height: 100vh;
+    background: #111;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding-top: 35px;
+    gap: 3px;
+    transition: right 0.3s ease-in-out;
     background: transparent;
   }
-   .nav-links li a {
+  
+  .nav-links li a {
     display: block;
     color: white;
     text-decoration: none;
-    padding: 6px 10px;   /* chhoti padding chhoti screen ke liye */
-    font-size: 10px;     /* text thoda chhota */
-  }
+    padding: 4px 8px;
+  } 
 
   .nav-links li {
     background: black;
-    margin: 1px 0;       /* aur kam gap */
-    border-radius: 10px;  /* halka curve */
+    margin: 6px 6px; 
+    border-radius: 10px;
+    font-size: 10px;  
   }
-
+  
   .nav-links li a::after {
     display: none !important;
   }
