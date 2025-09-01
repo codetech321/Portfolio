@@ -579,7 +579,7 @@ footer {
   } 
   .nav-links li {
     background: black;
-    margin: 2px 0;
+    margin: 2px 2px;
     border-radius: 15px;
     font-size: 12px; 
   }
