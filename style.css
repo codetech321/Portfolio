@@ -442,7 +442,8 @@ footer {
     padding-top: 60px;
     gap: 6px;
     transition: right 0.3s ease-in-out;
-    background: transparent;
+    background: transparent !important;
+    box-shadow: none !important;
   }
 
   .nav-links li {
@@ -574,7 +575,8 @@ footer {
     padding-top: 45px;
     gap: 4px;
     transition: right 0.3s ease-in-out;
-    background: transparent;
+    background: transparent !important;
+    box-shadow: none !important;
   }
   .nav-links li a {
     display: block;
@@ -670,7 +672,8 @@ footer {
     padding-top: 35px;
     gap: 4px;
     transition: right 0.3s ease-in-out;
-    background: transparent;
+    background: transparent !important;
+    box-shadow: none !important;
   }
   
   .nav-links li a {
