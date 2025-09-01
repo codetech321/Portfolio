@@ -445,7 +445,7 @@ footer {
 
   .nav-links li {
     background: black;
-    margin: 10px 10px;
+    margin: 5px 5px;
     border-radius: 20px;
     font-size: 15px;
   }
@@ -558,7 +558,7 @@ footer {
   }
   .nav-links {
     position: fixed;
-    top: 20px;
+    top: 15px;
     right: -100%;
     width: 100px;
     height: 100vh;
@@ -566,7 +566,7 @@ footer {
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
-    padding-top: 40px;
+    padding-top: 45px;
     gap: 4px;
     transition: right 0.3s ease-in-out;
     background: transparent;
@@ -579,7 +579,7 @@ footer {
   } 
   .nav-links li {
     background: black;
-    margin: 2px 0px;
+    margin: 0 0;
     border-radius: 15px;
     font-size: 12px; 
   }
@@ -651,7 +651,7 @@ footer {
   }
   .nav-links {
     position: fixed;
-    top: 20px;
+    top: 15px;
     right: -100%;
     width: 90px;
     height: 100vh;
@@ -674,7 +674,7 @@ footer {
 
   .nav-links li {
     background: black;
-    margin: 2px 0px; 
+    margin: 0 0; 
     border-radius: 10px;
     font-size: 10px;  
   }
