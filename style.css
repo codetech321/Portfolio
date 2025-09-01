@@ -1,11 +1,14 @@
+
 /* ====== Global Fix ====== */
 /* Tap highlight (mobile browsers) remove */
-a, button {
+a, button,.menu-toggle,.logo {
   -webkit-tap-highlight-color: transparent;
 }
 
 /* Active/Focus par koi background na aaye */
 a:active, a:focus,
+.menu-toggle:active, .menu-toggle:focus,
+.logo:active, .logo:focus,
 button:active, button:focus {
   background: transparent !important;
   outline: none;
