@@ -455,7 +455,7 @@ footer {
   .nav-links li {
     background: black;
     margin: 2px 0;      /* yaha gap kam kar do (pehle 5px tha) */
-    border-radius: 5px;
+    border-radius: 20px;
   }
 
   .nav-links li a {
@@ -577,7 +577,7 @@ footer {
   .nav-links li {
     background: black;
     margin: 2px 0;       /* beech ka gap kam */
-    border-radius: 4px;  /* halka curve */
+    border-radius: 15px;  /* halka curve */
   }
 
 
@@ -659,7 +659,7 @@ footer {
   .nav-links li {
     background: black;
     margin: 1px 0;       /* aur kam gap */
-    border-radius: 3px;  /* halka curve */
+    border-radius: 10px;  /* halka curve */
   }
   .hero h1 {
     font-size: 1.4rem;
