@@ -442,8 +442,7 @@ footer {
     padding-top: 60px;
     gap: 6px;
     transition: right 0.3s ease-in-out;
-    background: transparent !important;
-    box-shadow: none !important;
+    background: transparent;
   }
 
   .nav-links li {
@@ -451,6 +450,7 @@ footer {
     margin: 10px 0px;
     border-radius: 20px;
     font-size: 15px;
+    box-shadow: none !important;
   }
 
   .nav-links li a {
@@ -575,8 +575,7 @@ footer {
     padding-top: 45px;
     gap: 4px;
     transition: right 0.3s ease-in-out;
-    background: transparent !important;
-    box-shadow: none !important;
+    background: transparent;
   }
   .nav-links li a {
     display: block;
@@ -589,6 +588,7 @@ footer {
     margin: 12px 0; 
     border-radius: 15px;
     font-size: 12px; 
+    box-shadow: none !important;
   }
   .nav-links li a::after {
     display: none !important;
@@ -672,8 +672,8 @@ footer {
     padding-top: 35px;
     gap: 4px;
     transition: right 0.3s ease-in-out;
-    background: transparent !important;
-    box-shadow: none !important;
+    background: transparent;
+    
   }
   
   .nav-links li a {
@@ -687,7 +687,8 @@ footer {
     background: black;
     margin: 8px 0; 
     border-radius: 10px;
-    font-size: 10px;  
+    font-size: 10px;
+    box-shadow: none !important;  
   }
   
   .nav-links li a::after {
