@@ -641,7 +641,7 @@ footer {
 }
 
 /* Small Mobiles (≤480px) */
-@media (max-width: 480px) {
+@media (max-width: 580px) {
   .navbar .logo {
     font-size: 1rem;
   }
