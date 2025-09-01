@@ -456,6 +456,7 @@ footer {
     background: black;
     margin: 2px 0;      /* yaha gap kam kar do (pehle 5px tha) */
     border-radius: 20px;
+    font-size: 15px;
   }
 
   .nav-links li a {
@@ -574,7 +575,7 @@ footer {
     color: white;
     text-decoration: none;
     padding: 8px 12px;   /* padding chhoti rakhi mobile fit ke liye */
-    font-size: 15px;     /* thoda chhota text */
+    font-size: 12px;     /* thoda chhota text */
   }
   .nav-links li {
     background: black;
@@ -657,7 +658,7 @@ footer {
     color: white;
     text-decoration: none;
     padding: 6px 10px;   /* chhoti padding chhoti screen ke liye */
-    font-size: 14px;     /* text thoda chhota */
+    font-size: 10px;     /* text thoda chhota */
   }
 
   .nav-links li {
