@@ -450,6 +450,7 @@ footer {
     margin: 10px 0px;
     border-radius: 20px;
     font-size: 15px;
+    background: transparent;
     box-shadow: none !important;
   }
 
