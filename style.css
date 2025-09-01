@@ -438,7 +438,7 @@ footer {
 
   .nav-links {
     position: fixed;
-    top: 0;
+    top: 5px;
     right: -100%;
     width: 110px;
     height: 100vh;
@@ -565,6 +565,7 @@ footer {
     font-size: 1.2rem;
   }
   .nav-links {
+    margin-top: 5px;
     width: 100px;
     padding-top: 40px;
     gap: 4px;
@@ -649,6 +650,7 @@ footer {
     font-size: 1.5rem;
   }
   .nav-links {
+    margin-top: 5px;
     width: 90px;
     gap: 2px;
     background: transparent;
