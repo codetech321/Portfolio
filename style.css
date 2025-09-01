@@ -74,15 +74,25 @@ header {
 }
 
 .menu-toggle {
-  display: none; /* desktop pe hide */
-  font-size: 2rem;
   cursor: pointer;
-  z-index: 1002;
-  color: white; /* change according to background */
+  font-size: 24px;
+  display: none; /* desktop par hide */
 }
 
 .menu-toggle i {
-  transition: all 0.3s ease;
+  display: none; /* dono icons by default hidden */
+}
+
+.menu-toggle .open-icon {
+  display: inline-block; /* sirf bars pehle dikhe */
+}
+
+.menu-toggle.active .open-icon {
+  display: none; /* active hone par bars hide */
+}
+
+.menu-toggle.active .close-icon {
+  display: inline-block; /* active hone par cross dikhe */
 }
 
 /* ====== HERO ====== */

@@ -4,6 +4,7 @@ const navLinks = document.getElementById("navLinks");
 
 menuToggle.addEventListener("click", () => {
   navLinks.classList.toggle("active");
+  menuToggle.classList.toggle("active"); // icon change ke liye
 });
 
 //typewriter
