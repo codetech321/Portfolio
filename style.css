@@ -558,7 +558,7 @@ footer {
   }
   .nav-links {
     position: fixed;
-    top: 15px;
+    top: 20px;
     right: -100%;
     width: 100px;
     height: 100vh;
@@ -579,7 +579,7 @@ footer {
   } 
   .nav-links li {
     background: black;
-    margin: 8px 8px;
+    margin: 2px 0px;
     border-radius: 15px;
     font-size: 12px; 
   }
@@ -651,7 +651,7 @@ footer {
   }
   .nav-links {
     position: fixed;
-    top: 15px;
+    top: 20px;
     right: -100%;
     width: 90px;
     height: 100vh;
@@ -674,7 +674,7 @@ footer {
 
   .nav-links li {
     background: black;
-    margin: 6px 6px; 
+    margin: 2px 0px; 
     border-radius: 10px;
     font-size: 10px;  
   }
