@@ -1,20 +1,24 @@
-
 /* ====== Global Fix ====== */
 /* Tap highlight (mobile browsers) remove */
-a, button,.menu-toggle,.logo {
+a,
+button,
+.menu-toggle,
+.logo{
   -webkit-tap-highlight-color: transparent;
 }
 
 /* Active/Focus par koi background na aaye */
-a:active, a:focus,
-.menu-toggle:active, .menu-toggle:focus,
-.logo:active, .logo:focus,
-button:active, button:focus {
+a:active,
+a:focus,
+.menu-toggle:active,
+.menu-toggle:focus,
+.logo:active,
+.logo:focus,
+button:active,
+button:focus {
   background: transparent !important;
   outline: none;
 }
-
-
 
 /* ====== GLOBAL ====== */
 * {
@@ -70,7 +74,7 @@ header {
 }
 
 .nav-links a:hover {
-  color: #0097a7; 
+  color: #0097a7;
 }
 
 /* Underline animation effect */
@@ -92,22 +96,22 @@ header {
 .menu-toggle {
   cursor: pointer;
   font-size: 24px;
-  display: none; 
+  display: none;
 }
 
 .menu-toggle i {
-  display: none; 
+  display: none;
 }
 
 .menu-toggle .open-icon {
-  display: inline-block; 
+  display: inline-block;
 }
 .menu-toggle.active .open-icon {
-  display: none; 
+  display: none;
 }
 
 .menu-toggle.active .close-icon {
-  display: inline-block; 
+  display: inline-block;
 }
 
 /* ====== HERO ====== */
@@ -173,7 +177,7 @@ header {
 }
 
 .about-img img:hover {
-  transform: scale(1.05); 
+  transform: scale(1.05);
 }
 .about-img {
   position: relative;
@@ -202,7 +206,7 @@ header {
   height: 270px;
   border-radius: 50%;
   border: 3px solid transparent;
-  border-top: 3px solid #00bcd4; 
+  border-top: 3px solid #00bcd4;
   animation: rotate 4s linear infinite;
   z-index: 1;
 }
@@ -260,9 +264,9 @@ header {
 .skill {
   background: black;
   color: white;
-  padding: 10px 20px; 
+  padding: 10px 20px;
   border-radius: 6px;
-  font-size: 1rem; 
+  font-size: 1rem;
   font-weight: 600;
   transition: all 0.3s ease;
   cursor: pointer;
@@ -361,7 +365,7 @@ header {
   border-radius: 6px;
   font-size: 14px;
   font-weight: 500;
-  display: none; 
+  display: none;
   text-align: center;
 }
 .status-success {
@@ -474,7 +478,7 @@ footer {
     text-decoration: none;
     padding: 8px 15px;
   }
-  
+
   .nav-links li a::after {
     display: none !important; /* mobile par underline/transition hide ho jayega */
   }
@@ -577,9 +581,9 @@ footer {
   }
   .nav-links {
     position: fixed;
-    top: 60px;   
-    right: 15px;     
-    margin-right: 0; 
+    top: 60px;
+    right: 15px;
+    margin-right: 0;
     text-align: right;
     right: -100%;
     width: 100px;
@@ -598,12 +602,12 @@ footer {
     color: white;
     text-decoration: none;
     padding: 6px 12px;
-  } 
+  }
   .nav-links li {
     background: black;
-    margin: 12px 0; 
+    margin: 12px 0;
     border-radius: 15px;
-    font-size: 12px; 
+    font-size: 12px;
   }
   .nav-links li a::after {
     display: none !important;
@@ -673,8 +677,8 @@ footer {
   }
   .nav-links {
     position: fixed;
-    top: 55px;   
-    right: 10px;     
+    top: 55px;
+    right: 10px;
     margin-right: 0;
     text-align: right;
     right: -100%;
@@ -688,23 +692,22 @@ footer {
     gap: 4px;
     transition: right 0.3s ease-in-out;
     background: transparent;
-    
   }
-  
+
   .nav-links li a {
     display: block;
     color: white;
     text-decoration: none;
     padding: 4px 8px;
-  } 
+  }
 
   .nav-links li {
     background: black;
-    margin: 8px 0; 
+    margin: 8px 0;
     border-radius: 10px;
-    font-size: 10px; 
+    font-size: 10px;
   }
-  
+
   .nav-links li a::after {
     display: none !important;
   }
