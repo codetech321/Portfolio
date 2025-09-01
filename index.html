@@ -4,28 +4,21 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio | Chandrakesh Dhawal</title>
-
-    <!-- Google Fonts -->
+    <link rel="stylesheet" href="style.css" />
+    <script src="main.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap"
       rel="stylesheet"
     />
-
-    <!-- Font Awesome -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     />
-
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="style.css" />
-
-    <!-- JS -->
-    <script src="main.js" defer></script>
   </head>
   <body>
     <!-- ====== HEADER ====== -->
+
     <header>
       <nav class="navbar">
         <div class="logo" tabindex="0">Portfolio</div>
@@ -38,15 +31,18 @@
           <li><a href="#contact">Contact</a></li>
         </ul>
 
-        <!-- Mobile Menu Toggle -->
+        <!-- Menu Toggle (Mobile) -->
         <div class="menu-toggle" id="menuToggle">
           <i class="fas fa-bars open-icon"></i>
+          <!-- Default bars icon -->
           <i class="fas fa-times close-icon"></i>
+          <!-- Cross icon -->
         </div>
       </nav>
     </header>
 
     <!-- ====== HERO ====== -->
+
     <section id="home" class="hero">
       <div class="hero-content">
         <h1>Hello, I'm <span>Chandrakesh Dhawal</span></h1>
@@ -58,16 +54,19 @@
     </section>
 
     <!-- ====== ABOUT ====== -->
+
     <section id="about">
       <h2>About Me</h2>
       <div class="about-container">
+        <!-- Profile Image -->
         <div class="about-img">
           <div class="circle-border"></div>
           <img src="./Photo/about.png" alt="My Photo" />
         </div>
 
+        <!-- About Text -->
         <div class="about-text">
-          <p>
+          <p style="margin-bottom: 10px">
             I am a Web Developer with expertise in front-end technologies like
             HTML, CSS, and JavaScript, and back-end development using Node.js,
             Express, and MongoDB. I have experience in building responsive
@@ -76,7 +75,7 @@
             teams, and grow as a software developer.
           </p>
 
-          <h3 style="margin-top: 10px;">Education</h3>
+          <h3><u></u>Education</h3>
           <p>
             B.Tech in Computer Science – <strong>Rama University</strong> (2022
             - 2025)
@@ -88,14 +87,15 @@
 
           <h3>Experience & Internships</h3>
           <p>
-            Full Stack Web Development Intern at <strong>LearnNex</strong> (Nov
-            2024 - Feb 2025)<br />
-            Web Development Intern at <strong>InternPe</strong> (Oct 2023 - Nov
-            2023)<br />
-            Web Development Intern at <strong>TechnoHacks EduTech</strong> (Oct
-            2023 - Nov 2023)
+            Full Stack Web Development Intern at
+            <strong>LearnNex</strong>-Remote (Nov 2024 - Feb 2025)<br />
+            Web Development Intern at<strong> InternPe</strong>-Remote (Oct 2023
+            - Nov 2023)<br />
+            Web Development Intern at<strong> TechnoHacks EduTech</strong
+            >-Remote (Oct 2023 - Nov 2023)
           </p>
 
+          <!-- Resume Download -->
           <a href="./resume/MyResume.pdf" download class="resume-btn"
             >Download Resume</a
           >
@@ -119,6 +119,7 @@
     </section>
 
     <!-- ====== PROJECTS ====== -->
+
     <section id="projects" class="projects">
       <h2>My Projects</h2>
       <div class="projects-container">
@@ -134,6 +135,7 @@
             >View Project</a
           >
         </div>
+
         <div class="project-card">
           <h3>E-commerce Store</h3>
           <p>Responsive online store with product pages and cart system.</p>
@@ -144,6 +146,7 @@
             >View Project</a
           >
         </div>
+
         <div class="project-card">
           <h3>Blog Platform</h3>
           <p>A simple blog system with MongoDB, Node.js, and Express.</p>
@@ -161,8 +164,6 @@
 
     <section id="contact" class="contact">
       <h2>Contact Me</h2>
-
-      <!-- Contact Form -->
       <form id="contact-form">
         <input type="text" name="name" placeholder="Your Name" required />
         <input type="email" name="email" placeholder="Your Email" required />
@@ -170,41 +171,39 @@
         <button type="submit">Send Message</button>
       </form>
       <p id="status" class="status-msg"></p>
-
-      <!-- Contact Info -->
-      <div class="contact-info">
-        <a href="mailto:dhawal.dkd@gmail.com"
-          ><i class="fas fa-envelope"></i> dhawal.dkd@gmail.com</a
-        >
-        <a href="tel:+918604518825"
-          ><i class="fas fa-phone"></i> +91-8604518825</a
-        >
-      </div>
-
-      <!-- Social Media -->
-      <div class="social-icons">
-        <a href="#"><i class="fab fa-facebook-f"></i></a>
-        <a href="#"><i class="fab fa-twitter"></i></a>
-        <a href="https://linkedin.com/in/chandrakesh-dhawal" target="_blank"
-          ><i class="fab fa-linkedin-in"></i
-        ></a>
-        <a href="https://github.com/codetech321" target="_blank"
-          ><i class="fab fa-github"></i
-        ></a>
-        <a
-          href="https://www.instagram.com/_chandu369?igsh=c2NmenRyNTFycjNn"
-          target="_blank"
-          ><i class="fab fa-instagram"></i
-        ></a>
-      </div>
     </section>
 
-    <!-- Footer -->
+    <!-- Social Media Icons -->
+    <div class="social-icons">
+      <a href="#"><i class="fab fa-facebook-f"></i></a>
+      <a href="#"><i class="fab fa-twitter"></i></a>
+      <a href="https://linkedin.com/in/chandrakesh-dhawal" target="_blank"
+        ><i class="fab fa-linkedin-in"></i
+      ></a>
+      <a href="https://github.com/codetech321" target="_blank"
+        ><i class="fab fa-github"></i
+      ></a>
+      <a
+        href="https://www.instagram.com/_chandu369?igsh=c2NmenRyNTFycjNn"
+        target="_blank"
+        ><i class="fab fa-instagram"></i
+      ></a>
+    </div>
+    <!---Contact -->
+    <div class="contact">
+      <a href="mailto:dhawal.dkd@gmail.com">
+        <i class="fas fa-envelope"></i> dhawal.dkd@gmail.com
+      </a>
+      <p>
+        <i style="color: #00bcd4" class="fas fa-phone"></i>
+        <a href="tel:+911234567890">+91-8604518825</a>
+      </p>
+    </div>
+
     <footer>
       <p>© 2025 Chandrakesh Dhawal. All rights reserved.</p>
     </footer>
 
-    <!-- Contact Form Script -->
     <script>
       const scriptURL =
         "https://script.google.com/macros/s/AKfycbydfM2foDLA-0D33baAp1l5fh0uoHlKzYC7hW99DeoQpg1ndU3WilyhJd-urLLhR36A/exec";
@@ -213,13 +212,15 @@
 
       form.addEventListener("submit", (e) => {
         e.preventDefault();
+        const data = {
+          name: form.name.value,
+          email: form.email.value,
+          message: form.message.value,
+        };
+
         fetch(scriptURL, {
           method: "POST",
-          body: JSON.stringify({
-            name: form.name.value,
-            email: form.email.value,
-            message: form.message.value,
-          }),
+          body: JSON.stringify(data),
         })
           .then((res) => res.json())
           .then(() => {
@@ -227,13 +228,20 @@
             statusMsg.className = "status-msg status-success";
             statusMsg.style.display = "block";
             form.reset();
-            setTimeout(() => (statusMsg.style.display = "none"), 5000);
+
+            // Hide after 5s
+            setTimeout(() => {
+              statusMsg.style.display = "none";
+            }, 5000);
           })
-          .catch(() => {
+          .catch((err) => {
             statusMsg.innerText = "❌ Error sending message!";
             statusMsg.className = "status-msg status-error";
             statusMsg.style.display = "block";
-            setTimeout(() => (statusMsg.style.display = "none"), 5000);
+
+            setTimeout(() => {
+              statusMsg.style.display = "none";
+            }, 5000);
           });
       });
     </script>
