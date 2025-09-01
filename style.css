@@ -78,7 +78,7 @@ header {
   font-size: 2rem;
   cursor: pointer;
   z-index: 1002;
-  color: black; /* change according to background */
+  color: white /* change according to background */
 }
 
 .menu-toggle i {
