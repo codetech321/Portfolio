@@ -454,22 +454,15 @@ footer {
   
   .nav-links li {
     background: black;
+    margin: 2px 0;      /* yaha gap kam kar do (pehle 5px tha) */
     border-radius: 20px;
-    margin: 0;
-    padding: 0;
-  
   }
 
   .nav-links li a {
-    position: relative;
-    display: inline-block; /* underline ko text ke neeche fix karne ke liye */
-    padding: 8px 0;  /* top-bottom padding fix rakho */
-    line-height: 1.2; /* extra gap remove karne ke liye */
-    text-decoration: none;
+    display: block;
     color: white;
-  }
-   .nav-links li a::after {
-    bottom: 0; /* underline ko bilkul text ke niche set karega */
+    text-decoration: none;
+    padding: 8px 15px;
   }
 
   .nav-links.active {
