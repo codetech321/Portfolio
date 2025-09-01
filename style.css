@@ -455,13 +455,14 @@ footer {
   .nav-links li {
     background: black;
     border-radius: 20px;
+    margin: 0px, 0;
   }
 
   .nav-links li a {
     display: block;
     color: white;
     text-decoration: none;
-    padding: 10px 20px;
+    padding: 8px 15px;
   }
 
   .nav-links.active {
