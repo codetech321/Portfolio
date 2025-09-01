@@ -85,9 +85,9 @@ header {
 
 .menu-toggle .open-icon {
   display: inline-block; 
-
+}
 .menu-toggle.active .open-icon {
-  display: none; /
+  display: none; 
 }
 
 .menu-toggle.active .close-icon {
