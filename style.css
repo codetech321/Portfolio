@@ -454,8 +454,8 @@ footer {
   
   .nav-links li {
     background: black;
-    border-radius: 20px;
-    margin: 0px, 0;
+    margin: 2px 0;      /* yaha gap kam kar do (pehle 5px tha) */
+    border-radius: 5px;
   }
 
   .nav-links li a {
@@ -568,13 +568,18 @@ footer {
     background: transparent;
   }
   .nav-links li a {
-    font-size: 1rem;
+    display: block;
     color: white;
+    text-decoration: none;
+    padding: 8px 12px;   /* padding chhoti rakhi mobile fit ke liye */
+    font-size: 15px;     /* thoda chhota text */
   }
   .nav-links li {
     background: black;
-    border-radius: 20px;
+    margin: 2px 0;       /* beech ka gap kam */
+    border-radius: 4px;  /* halka curve */
   }
+
 
   .menu-toggle {
     display: block;
@@ -643,13 +648,18 @@ footer {
     gap: 18px;
     background: transparent;
   }
-  .nav-links li a {
-    font-size: 0.9rem;
+   .nav-links li a {
+    display: block;
     color: white;
+    text-decoration: none;
+    padding: 6px 10px;   /* chhoti padding chhoti screen ke liye */
+    font-size: 14px;     /* text thoda chhota */
   }
+
   .nav-links li {
     background: black;
-    border-radius: 20px;
+    margin: 1px 0;       /* aur kam gap */
+    border-radius: 3px;  /* halka curve */
   }
   .hero h1 {
     font-size: 1.4rem;
