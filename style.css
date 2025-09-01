@@ -454,7 +454,7 @@ footer {
 
   .nav-links li {
     background: black;
-    margin: 2px 0; /* yaha gap kam kar do (pehle 5px tha) */
+    margin: 2px 0;      /* yaha gap kam kar do (pehle 5px tha) */
     border-radius: 20px;
     font-size: 15px;
   }
@@ -465,15 +465,16 @@ footer {
     text-decoration: none;
     padding: 8px 15px;
   }
-  .nav-links li a::after {
-    display: none !important; /* mobile par underline/transition hide ho jayega */
+     .nav-links li a::after {
+    display: none !important;  /* mobile par underline/transition hide ho jayega */
   }
   .nav-links.active {
     right: 0;
   }
   .menu-toggle {
     display: block;
-    font-size: 1.5rem;
+    z-index: 1001;
+    font-size: 1.5rem ;
   }
 
   /* Hero Section */
@@ -575,16 +576,16 @@ footer {
     display: block;
     color: white;
     text-decoration: none;
-    padding: 8px 12px; /* padding chhoti rakhi mobile fit ke liye */
-    font-size: 12px; /* thoda chhota text */
+    padding: 8px 12px;   /* padding chhoti rakhi mobile fit ke liye */
+    font-size: 12px;     /* thoda chhota text */
   }
   .nav-links li {
     background: black;
-    margin: 2px 0; /* beech ka gap kam */
-    border-radius: 15px; /* halka curve */
+    margin: 2px 0;       /* beech ka gap kam */
+    border-radius: 15px;  /* halka curve */
   }
 
-  .nav-links li a::after {
+.nav-links li a::after {
     display: none !important;
   }
   .menu-toggle {
@@ -656,18 +657,18 @@ footer {
     gap: 2px;
     background: transparent;
   }
-  .nav-links li a {
+   .nav-links li a {
     display: block;
     color: white;
     text-decoration: none;
-    padding: 6px 10px; /* chhoti padding chhoti screen ke liye */
-    font-size: 10px; /* text thoda chhota */
+    padding: 6px 10px;   /* chhoti padding chhoti screen ke liye */
+    font-size: 10px;     /* text thoda chhota */
   }
 
   .nav-links li {
     background: black;
-    margin: 1px 0; /* aur kam gap */
-    border-radius: 10px; /* halka curve */
+    margin: 1px 0;       /* aur kam gap */
+    border-radius: 10px;  /* halka curve */
   }
 
   .nav-links li a::after {
