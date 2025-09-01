@@ -450,8 +450,6 @@ footer {
     margin: 10px 0px;
     border-radius: 20px;
     font-size: 15px;
-    background: transparent;
-    box-shadow: none !important;
   }
 
   .nav-links li a {
@@ -589,7 +587,6 @@ footer {
     margin: 12px 0; 
     border-radius: 15px;
     font-size: 12px; 
-    box-shadow: none !important;
   }
   .nav-links li a::after {
     display: none !important;
@@ -688,8 +685,7 @@ footer {
     background: black;
     margin: 8px 0; 
     border-radius: 10px;
-    font-size: 10px;
-    box-shadow: none !important;  
+    font-size: 10px; 
   }
   
   .nav-links li a::after {
