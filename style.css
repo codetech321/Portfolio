@@ -216,7 +216,6 @@ header {
 }
 
 /* ====== SKILLS ====== */
-
 .skills {
   padding: 60px 20px;
   text-align: center;
@@ -253,6 +252,7 @@ header {
   transform: scale(1.05);
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
+
 /* ====== PROJECTS ====== */
 
 .projects {
@@ -434,9 +434,9 @@ footer {
     gap: 25px;
     transition: right 0.3s ease-in-out;
     background: transparent;
-  }  
+  }
   .nav-links li a {
-    color:black;
+    color: black;
   }
   .nav-links.active {
     right: 0;
@@ -498,7 +498,7 @@ footer {
     font-size: 1rem;
   }
 
-  .resume-btn { 
+  .resume-btn {
     margin-top: 20px;
     display: inline-block;
   }
@@ -548,7 +548,7 @@ footer {
     gap: 25px;
     transition: right 0.3s ease-in-out;
     background: transparent;
-  }  
+  }
   .nav-links li a {
     color: black;
   }
@@ -614,18 +614,21 @@ footer {
     margin-top: 15px;
     font-size: 1rem;
   }
-  .resume-btn { 
+  .resume-btn {
     margin-top: 20px;
     display: inline-block;
   }
 
   /* Skills */
-  .skills-container {
+   .skills-container {
     gap: 12px;
   }
   .skill {
     padding: 8px 15px;
     font-size: 0.9rem;
+  }
+  .skill i {
+    font-size: 1rem;
   }
 
   /* Projects */
@@ -689,8 +692,11 @@ footer {
   }
 
   .skill {
-    font-size: 0.85rem;
     padding: 7px 12px;
+    font-size: 0.85rem;
+  }
+  .skill i {
+    font-size: 0.95rem;
   }
 
   .project-card {
@@ -724,7 +730,6 @@ footer {
   .nav-links li a {
     font-size: 0.9rem;
     color: black;
-
   }
 
   .hero h1 {
@@ -751,10 +756,12 @@ footer {
   }
 
   .skill {
-    font-size: 0.75rem;
     padding: 6px 10px;
+    font-size: 0.75rem;
   }
-
+  .skill i {
+    font-size: 0.85rem;
+  }
   .project-card h3 {
     font-size: 1rem;
   }
