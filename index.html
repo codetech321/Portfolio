@@ -205,45 +205,62 @@
     </footer>
 
     <script>
-      const scriptURL =
-        "https://script.google.com/macros/s/AKfycbydfM2foDLA-0D33baAp1l5fh0uoHlKzYC7hW99DeoQpg1ndU3WilyhJd-urLLhR36A/exec";
-      const form = document.getElementById("contact-form");
-      const statusMsg = document.getElementById("status");
+  const scriptURL =
+    "https://script.google.com/macros/s/AKfycbydfM2foDLA-0D33baAp1l5fh0uoHlKzYC7hW99DeoQpg1ndU3WilyhJd-urLLhR36A/exec";
+  const form = document.getElementById("contact-form");
+  const statusMsg = document.getElementById("status");
+  const sendBtn = form.querySelector("button");
 
-      form.addEventListener("submit", (e) => {
-        e.preventDefault();
-        const data = {
-          name: form.name.value,
-          email: form.email.value,
-          message: form.message.value,
-        };
+  form.addEventListener("submit", (e) => {
+    e.preventDefault();
 
-        fetch(scriptURL, {
-          method: "POST",
-          body: JSON.stringify(data),
-        })
-          .then((res) => res.json())
-          .then(() => {
-            statusMsg.innerText = "✅ Message sent successfully!";
-            statusMsg.className = "status-msg status-success";
-            statusMsg.style.display = "block";
-            form.reset();
+    // Disable button & show sending state
+    sendBtn.disabled = true;
+    sendBtn.textContent = "Sending...";
 
-            // Hide after 5s
-            setTimeout(() => {
-              statusMsg.style.display = "none";
-            }, 5000);
-          })
-          .catch((err) => {
-            statusMsg.innerText = "❌ Error sending message!";
-            statusMsg.className = "status-msg status-error";
-            statusMsg.style.display = "block";
+    const data = {
+      name: form.name.value,
+      email: form.email.value,
+      message: form.message.value,
+    };
 
-            setTimeout(() => {
-              statusMsg.style.display = "none";
-            }, 5000);
-          });
+    fetch(scriptURL, {
+      method: "POST",
+      body: JSON.stringify(data),
+    })
+      .then((res) => res.json())
+      .then(() => {
+        statusMsg.innerText = "✅ Message sent successfully!";
+        statusMsg.className = "status-msg status-success";
+        statusMsg.style.display = "block";
+        form.reset();
+
+        // Change button text to success
+        sendBtn.textContent = "Message Sent ✅";
+
+        // Reset button after 3s
+        setTimeout(() => {
+          sendBtn.disabled = false;
+          sendBtn.textContent = "Send Message";
+          statusMsg.style.display = "none";
+        }, 3000);
+      })
+      .catch((err) => {
+        statusMsg.innerText = "❌ Error sending message!";
+        statusMsg.className = "status-msg status-error";
+        statusMsg.style.display = "block";
+
+        sendBtn.textContent = "Try Again";
+
+        // Reset button after 3s
+        setTimeout(() => {
+          sendBtn.disabled = false;
+          sendBtn.textContent = "Send Message";
+          statusMsg.style.display = "none";
+        }, 3000);
       });
-    </script>
+  });
+</script>
+
   </body>
 </html>
